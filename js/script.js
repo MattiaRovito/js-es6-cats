@@ -9,43 +9,53 @@
 //Todo Milestone 3 Creare un nuovo array con prima tutti i gattini femmina e poi tutti i gattini maschio, inserendo solamente nome, colore e opacità del fiocco per ogni gatto.
 
 
-
+//* Creiamo l'array di oggetti
 const cat = 
 [
     {
         nome : 'Felix',
         eta : 10,
-        colore : 'black',
+        colore : 'nero',
         sesso : 'M'
     },
     {
         nome : 'Garfield',
         eta : 13,
-        colore : 'orange',
+        colore : 'arancione',
         sesso : 'M'
     },
     {
         nome : 'GattoConGliStivali',
         eta : 7,
-        colore : 'white and orange',
+        colore : 'bianco e arancione',
         sesso : 'M'
     },
     {
         nome : 'Silvestro',
         eta : 5,
-        colore : 'black and white',
+        colore : 'nero e bianco',
         sesso : 'F'
     },
     {
         nome : 'Tom',
         eta : 2,
-        colore : 'lightblue',
+        colore : 'azzurro',
         sesso : 'F'
     },
     {
         nome : 'Birba',
         eta : 11,
-        colore : 'white',
+        colore : 'bianco',
         sesso : 'F'
     },
 ];
+
+//*Stampiamo con console.log, tramite forEach() i gatti con i rispettivi nomi e colori
+
+
+cat.forEach((element) => {
+    console.log(`
+        Il gatto si chiama ${element.nome} ed è ${element.colore} 
+    `);
+
+});
