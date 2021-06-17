@@ -9,3 +9,43 @@
 //Todo Milestone 3 Creare un nuovo array con prima tutti i gattini femmina e poi tutti i gattini maschio, inserendo solamente nome, colore e opacità del fiocco per ogni gatto.
 
 
+
+const cat = 
+[
+    {
+        nome : 'Felix',
+        eta : 10,
+        colore : 'black',
+        sesso : 'M'
+    },
+    {
+        nome : 'Garfield',
+        eta : 13,
+        colore : 'orange',
+        sesso : 'M'
+    },
+    {
+        nome : 'GattoConGliStivali',
+        eta : 7,
+        colore : 'white and orange',
+        sesso : 'M'
+    },
+    {
+        nome : 'Silvestro',
+        eta : 5,
+        colore : 'black and white',
+        sesso : 'F'
+    },
+    {
+        nome : 'Tom',
+        eta : 2,
+        colore : 'lightblue',
+        sesso : 'F'
+    },
+    {
+        nome : 'Birba',
+        eta : 11,
+        colore : 'white',
+        sesso : 'F'
+    },
+];
