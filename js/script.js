@@ -101,10 +101,10 @@ newCats.forEach((element) => {
 
 //* Dividiamo i gatti in due array, maschi e femmine
 const catsMale = newCats.filter((element) => {
-    return element.sesso === "maschio";
+    return element.sesso === "M";
 });
 const catsFemale = newCats.filter((element) => {
-    return element.sesso === "femmina";
+    return element.sesso === "F";
 });
 
 console.log("I gatti maschi sono: ", catsMale);
@@ -114,5 +114,22 @@ console.log("Le gatte femmine sono: ", catsFemale);
 //! Milestone 3 
 //TODO Creare un nuovo array con prima tutti i gattini femmina e poi tutti i gattini maschio, inserendo solamente nome, colore e opacità del fiocco per ogni gatto.
 
+const catsTot = [...catsFemale, ...catsMale];
+// console.log(catsTot);
+
+catsFemale.map((element) => {
+    document.getElementById("gattiFinali").innerHTML += 
+    `
+        ${element.nome} <i class="fas fa-award" style="color:${element.fiocco.colore}; opacity:${element.fiocco.opacity}"></i> è una gattina <br>
+    `
+});
+
+catsMale.map((element) => {
+    document.getElementById("gattiFinali").innerHTML += 
+    `
+        ${element.nome} <i class="fas fa-award" style="color:${element.fiocco.colore}; opacity:${element.fiocco.opacity}"></i> è un gattino <br>
+    `
+});
 
 
+//? Non funziona, vedere domani
