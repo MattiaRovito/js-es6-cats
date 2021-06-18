@@ -132,4 +132,3 @@ catsMale.map((element) => {
 });
 
 
-//? Non funziona, vedere domani
